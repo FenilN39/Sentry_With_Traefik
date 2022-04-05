@@ -1,0 +1,2232 @@
+▶ Parsing command line ...
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+
+▶ Checking for latest commit ... 
+skipped
+
+▶ Checking minimum requirements ...
+Found Docker version 20.10.14
+Found Docker Compose version 1.29.2
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+554879bb3004: Pulling fs layer
+554879bb3004: Verifying Checksum
+554879bb3004: Download complete
+554879bb3004: Pull complete
+Digest: sha256:caa382c432891547782ce7140fb3b7304613d3b0438834dce1cad68896ab110a
+Status: Downloaded newer image for busybox:latest
+WARN: Recommended minimum CPU cores available to Docker is 4, found 2
+WARN: Recommended minimum RAM available to Docker is 7800 MB, found 3932 MB
+
+▶ Turning things off ...
+Removing orphan container "traefik"
+Removing network sentry-self-hosted_default
+Network sentry-self-hosted_default not found.
+Network traefik-proxy is external, skipping
+
+▶ Creating volumes for persistent storage ...
+Created sentry-clickhouse.
+Created sentry-data.
+Created sentry-kafka.
+Created sentry-postgres.
+Created sentry-redis.
+Created sentry-symbolicator.
+Created sentry-zookeeper.
+
+▶ Ensuring files from examples ...
+Creating ../sentry/sentry.conf.py...
+Creating ../sentry/config.yml...
+Creating ../symbolicator/config.yml...
+Creating ../sentry/requirements.txt...
+
+▶ Ensuring Relay credentials ...
+Creating ../relay/config.yml...
+Pulling relay ... 
+Pulling relay ... pulling from getsentry/relay
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... pulling fs layer
+Pulling relay ... waiting
+Pulling relay ... waiting
+Pulling relay ... waiting
+Pulling relay ... waiting
+Pulling relay ... downloading (1.0%)
+Pulling relay ... downloading (1.0%)
+Pulling relay ... downloading (14.6%)
+Pulling relay ... downloading (100.0%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... downloading (40.2%)
+Pulling relay ... downloading (100.0%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... downloading (83.3%)
+Pulling relay ... downloading (0.5%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... downloading (1.0%)
+Pulling relay ... downloading (8.2%)
+Pulling relay ... downloading (70.0%)
+Pulling relay ... downloading (100.0%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... extracting (1.1%)
+Pulling relay ... downloading (36.7%)
+Pulling relay ... downloading (14.4%)
+Pulling relay ... extracting (7.6%)
+Pulling relay ... downloading (20.6%)
+Pulling relay ... downloading (97.6%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... extracting (10.9%)
+Pulling relay ... downloading (26.8%)
+Pulling relay ... extracting (21.7%)
+Pulling relay ... downloading (34.5%)
+Pulling relay ... extracting (29.3%)
+Pulling relay ... downloading (40.1%)
+Pulling relay ... extracting (38.0%)
+Pulling relay ... downloading (45.8%)
+Pulling relay ... extracting (45.6%)
+Pulling relay ... downloading (53.5%)
+Pulling relay ... extracting (53.2%)
+Pulling relay ... downloading (58.7%)
+Pulling relay ... downloading (66.9%)
+Pulling relay ... extracting (59.7%)
+Pulling relay ... downloading (77.3%)
+Pulling relay ... extracting (64.1%)
+Pulling relay ... downloading (82.9%)
+Pulling relay ... extracting (69.5%)
+Pulling relay ... downloading (90.1%)
+Pulling relay ... extracting (78.2%)
+Pulling relay ... downloading (97.3%)
+Pulling relay ... extracting (83.6%)
+Pulling relay ... verifying checksum
+Pulling relay ... download complete
+Pulling relay ... extracting (91.2%)
+Pulling relay ... extracting (94.5%)
+Pulling relay ... extracting (96.7%)
+Pulling relay ... extracting (98.8%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (1.3%)
+Pulling relay ... extracting (10.2%)
+Pulling relay ... extracting (67.8%)
+Pulling relay ... extracting (98.5%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (100.0%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (100.0%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (1.3%)
+Pulling relay ... extracting (16.4%)
+Pulling relay ... extracting (39.1%)
+Pulling relay ... extracting (63.0%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (0.5%)
+Pulling relay ... extracting (10.2%)
+Pulling relay ... extracting (18.2%)
+Pulling relay ... extracting (26.7%)
+Pulling relay ... extracting (37.4%)
+Pulling relay ... extracting (45.5%)
+Pulling relay ... extracting (54.0%)
+Pulling relay ... extracting (63.1%)
+Pulling relay ... extracting (69.0%)
+Pulling relay ... extracting (77.5%)
+Pulling relay ... extracting (87.2%)
+Pulling relay ... extracting (94.1%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... extracting (100.0%)
+Pulling relay ... extracting (100.0%)
+Pulling relay ... pull complete
+Pulling relay ... digest: sha256:26ce31d1600ad01692...
+Pulling relay ... status: downloaded newer image fo...
+Pulling relay ... done
+Creating network "sentry-self-hosted_default" with the default driver
+Creating volume "sentry-self-hosted_sentry-secrets" with default driver
+Creating volume "sentry-self-hosted_sentry-smtp" with default driver
+Creating volume "sentry-self-hosted_sentry-zookeeper-log" with default driver
+Creating volume "sentry-self-hosted_sentry-kafka-log" with default driver
+Creating volume "sentry-self-hosted_sentry-smtp-log" with default driver
+Creating volume "sentry-self-hosted_sentry-clickhouse-log" with default driver
+Creating sentry-self-hosted_relay_run ... 
+Creating sentry-self-hosted_relay_run ... done
+Creating sentry-self-hosted_relay_run ... 
+Creating sentry-self-hosted_relay_run ... done
+Relay credentials written to ../relay/credentials.json.
+
+▶ Generating secret key ...
+Secret key written to ../sentry/config.yml
+
+▶ Replacing TSDB ...
+
+▶ Fetching and updating Docker images ...
+Some service image(s) must be built from source by running:
+    docker-compose build snuba-cleanup sentry-cleanup symbolicator-cleanup snuba-transactions-cleanup
+22.3.0: Pulling from getsentry/sentry
+Digest: sha256:5a2b91812f24bea32e5a2dc924ddd56d7b1f37b07dd4d365048d162916f89ca8
+Status: Image is up to date for getsentry/sentry:22.3.0
+docker.io/getsentry/sentry:22.3.0
+
+▶ Building and tagging Docker images ...
+
+smtp uses an image, skipping
+memcached uses an image, skipping
+redis uses an image, skipping
+postgres uses an image, skipping
+zookeeper uses an image, skipping
+kafka uses an image, skipping
+clickhouse uses an image, skipping
+geoipupdate uses an image, skipping
+snuba-api uses an image, skipping
+snuba-consumer uses an image, skipping
+snuba-outcomes-consumer uses an image, skipping
+snuba-sessions-consumer uses an image, skipping
+snuba-transactions-consumer uses an image, skipping
+snuba-replacer uses an image, skipping
+snuba-subscription-consumer-events uses an image, skipping
+snuba-subscription-consumer-transactions uses an image, skipping
+symbolicator uses an image, skipping
+web uses an image, skipping
+cron uses an image, skipping
+worker uses an image, skipping
+ingest-consumer uses an image, skipping
+post-process-forwarder uses an image, skipping
+subscription-consumer-events uses an image, skipping
+subscription-consumer-transactions uses an image, skipping
+relay uses an image, skipping
+nginx uses an image, skipping
+Building snuba-cleanup
+Sending build context to Docker daemon  3.584kB
+Step 1/5 : ARG BASE_IMAGE
+Step 2/5 : FROM ${BASE_IMAGE}
+ ---> 1a235937f21f
+Step 3/5 : RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+ ---> Running in 9eb559c7b966
+Get:1 http://security.debian.org/debian-security bullseye-security InRelease [44.1 kB]
+Get:2 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [39.4 kB]
+Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8182 kB]
+Get:5 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [2596 B]
+Get:6 http://security.debian.org/debian-security bullseye-security/main amd64 Packages [124 kB]
+Fetched 8508 kB in 2s (4427 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  sensible-utils
+Suggested packages:
+  anacron logrotate checksecurity
+Recommended packages:
+  default-mta | mail-transport-agent
+The following NEW packages will be installed:
+  cron sensible-utils
+0 upgraded, 2 newly installed, 0 to remove and 12 not upgraded.
+Need to get 114 kB of archives.
+After this operation, 314 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 sensible-utils all 0.0.14 [14.8 kB]
+Get:2 http://deb.debian.org/debian bullseye/main amd64 cron amd64 3.0pl1-137 [99.6 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 114 kB in 0s (4303 kB/s)
+Selecting previously unselected package sensible-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7023 files and directories currently installed.)
+Preparing to unpack .../sensible-utils_0.0.14_all.deb ...
+Unpacking sensible-utils (0.0.14) ...
+Selecting previously unselected package cron.
+Preparing to unpack .../cron_3.0pl1-137_amd64.deb ...
+Unpacking cron (3.0pl1-137) ...
+Setting up sensible-utils (0.0.14) ...
+Setting up cron (3.0pl1-137) ...
+Adding group `crontab' (GID 101) ...
+Done.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Removing intermediate container 9eb559c7b966
+ ---> 0c84a3e1a01a
+Step 4/5 : COPY entrypoint.sh /entrypoint.sh
+ ---> 60d1d60744d3
+Step 5/5 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Running in 2bf8d10c9c3e
+Removing intermediate container 2bf8d10c9c3e
+ ---> 07359cf45958
+Successfully built 07359cf45958
+Successfully tagged snuba-cleanup-self-hosted-local:latest
+Building snuba-transactions-cleanup
+Sending build context to Docker daemon  3.584kB
+Step 1/5 : ARG BASE_IMAGE
+Step 2/5 : FROM ${BASE_IMAGE}
+ ---> 1a235937f21f
+Step 3/5 : RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 0c84a3e1a01a
+Step 4/5 : COPY entrypoint.sh /entrypoint.sh
+ ---> Using cache
+ ---> 60d1d60744d3
+Step 5/5 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Using cache
+ ---> 07359cf45958
+Successfully built 07359cf45958
+Successfully tagged snuba-cleanup-self-hosted-local:latest
+Building symbolicator-cleanup
+Sending build context to Docker daemon  3.584kB
+Step 1/5 : ARG BASE_IMAGE
+Step 2/5 : FROM ${BASE_IMAGE}
+ ---> 6c4923ab81d2
+Step 3/5 : RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+ ---> Running in ed88a130726c
+Get:1 http://security.debian.org/debian-security stretch/updates InRelease [53.0 kB]
+Ign:2 http://deb.debian.org/debian stretch InRelease
+Get:3 http://deb.debian.org/debian stretch-updates InRelease [93.6 kB]
+Get:4 http://deb.debian.org/debian stretch Release [118 kB]
+Get:5 http://deb.debian.org/debian stretch Release.gpg [3177 B]
+Get:6 http://security.debian.org/debian-security stretch/updates/main amd64 Packages [760 kB]
+Get:7 http://deb.debian.org/debian stretch/main amd64 Packages [7080 kB]
+Fetched 8107 kB in 2s (3959 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  anacron logrotate checksecurity
+Recommended packages:
+  exim4 | postfix | mail-transport-agent
+The following NEW packages will be installed:
+  cron
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 96.6 kB of archives.
+After this operation, 257 kB of additional disk space will be used.
+Get:1 http://security.debian.org/debian-security stretch/updates/main amd64 cron amd64 3.0pl1-128+deb9u2 [96.6 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 96.6 kB in 0s (545 kB/s)
+Selecting previously unselected package cron.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6671 files and directories currently installed.)
+Preparing to unpack .../cron_3.0pl1-128+deb9u2_amd64.deb ...
+Unpacking cron (3.0pl1-128+deb9u2) ...
+Setting up cron (3.0pl1-128+deb9u2) ...
+Adding group `crontab' (GID 101) ...
+Done.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Removing intermediate container ed88a130726c
+ ---> 156db629c4c9
+Step 4/5 : COPY entrypoint.sh /entrypoint.sh
+ ---> 6fb252bebfb9
+Step 5/5 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Running in 18dbf6cb1a2e
+Removing intermediate container 18dbf6cb1a2e
+ ---> c868a387d55b
+Successfully built c868a387d55b
+Successfully tagged symbolicator-cleanup-self-hosted-local:latest
+Building sentry-cleanup
+Sending build context to Docker daemon  3.584kB
+Step 1/5 : ARG BASE_IMAGE
+Step 2/5 : FROM ${BASE_IMAGE}
+ ---> b87153b41566
+Step 3/5 : RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+ ---> Running in eaebb30918b1
+Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+Get:2 http://security.debian.org/debian-security bullseye-security InRelease [44.1 kB]
+Get:3 http://deb.debian.org/debian bullseye-updates InRelease [39.4 kB]
+Get:4 http://security.debian.org/debian-security bullseye-security/main amd64 Packages [124 kB]
+Get:5 http://deb.debian.org/debian bullseye/main amd64 Packages [8182 kB]
+Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [2596 B]
+Fetched 8508 kB in 2s (4953 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  sensible-utils
+Suggested packages:
+  anacron logrotate checksecurity
+Recommended packages:
+  default-mta | mail-transport-agent
+The following NEW packages will be installed:
+  cron sensible-utils
+0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
+Need to get 114 kB of archives.
+After this operation, 314 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 sensible-utils all 0.0.14 [14.8 kB]
+Get:2 http://deb.debian.org/debian bullseye/main amd64 cron amd64 3.0pl1-137 [99.6 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 114 kB in 0s (5101 kB/s)
+Selecting previously unselected package sensible-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 12313 files and directories currently installed.)
+Preparing to unpack .../sensible-utils_0.0.14_all.deb ...
+Unpacking sensible-utils (0.0.14) ...
+Selecting previously unselected package cron.
+Preparing to unpack .../cron_3.0pl1-137_amd64.deb ...
+Unpacking cron (3.0pl1-137) ...
+Setting up sensible-utils (0.0.14) ...
+Setting up cron (3.0pl1-137) ...
+Adding group `crontab' (GID 101) ...
+Done.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Removing intermediate container eaebb30918b1
+ ---> 74644cf910f2
+Step 4/5 : COPY entrypoint.sh /entrypoint.sh
+ ---> de7357b63e94
+Step 5/5 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Running in f52268f6010a
+Removing intermediate container f52268f6010a
+ ---> c4fad414a075
+Successfully built c4fad414a075
+Successfully tagged sentry-cleanup-self-hosted-local:latest
+
+Docker images built.
+
+▶ Setting up Zookeeper ...
+Creating sentry-self-hosted_zookeeper_run ... 
+Creating sentry-self-hosted_zookeeper_run ... done
+
+▶ Downloading and installing wal2json ...
+Unable to find image 'curlimages/curl:7.77.0' locally
+7.77.0: Pulling from curlimages/curl
+339de151aab4: Pulling fs layer
+9576f9a419e9: Pulling fs layer
+5b67e0e9bce9: Pulling fs layer
+7c0640a6c519: Pulling fs layer
+1d8f7d50664a: Pulling fs layer
+3ce74da83aeb: Pulling fs layer
+7094fabf5e16: Pulling fs layer
+2f4d0b649c1f: Pulling fs layer
+110e7f874674: Pulling fs layer
+7c0640a6c519: Waiting
+1d8f7d50664a: Waiting
+3ce74da83aeb: Waiting
+7094fabf5e16: Waiting
+2f4d0b649c1f: Waiting
+110e7f874674: Waiting
+5b67e0e9bce9: Verifying Checksum
+5b67e0e9bce9: Download complete
+339de151aab4: Verifying Checksum
+339de151aab4: Download complete
+9576f9a419e9: Verifying Checksum
+9576f9a419e9: Download complete
+1d8f7d50664a: Download complete
+7c0640a6c519: Verifying Checksum
+7c0640a6c519: Download complete
+3ce74da83aeb: Verifying Checksum
+3ce74da83aeb: Download complete
+2f4d0b649c1f: Verifying Checksum
+2f4d0b649c1f: Download complete
+7094fabf5e16: Verifying Checksum
+7094fabf5e16: Download complete
+110e7f874674: Verifying Checksum
+110e7f874674: Download complete
+339de151aab4: Pull complete
+9576f9a419e9: Pull complete
+5b67e0e9bce9: Pull complete
+7c0640a6c519: Pull complete
+1d8f7d50664a: Pull complete
+3ce74da83aeb: Pull complete
+7094fabf5e16: Pull complete
+2f4d0b649c1f: Pull complete
+110e7f874674: Pull complete
+Digest: sha256:6e0a786e3e5181df00eaf3a0a1749c18a6bb20b01c9bd192ea72176ce8a1c94b
+Status: Downloaded newer image for curlimages/curl:7.77.0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  5417  100  5417    0     0  36346      0 --:--:-- --:--:-- --:--:-- 36601
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   669  100   669    0     0   5261      0 --:--:-- --:--:-- --:--:--  5309
+100  101k  100  101k    0     0   504k      0 --:--:-- --:--:-- --:--:--  504k
+
+▶ Bootstrapping and migrating Snuba ...
+Creating sentry-self-hosted_redis_1 ... 
+Creating sentry-self-hosted_zookeeper_1 ... 
+Creating sentry-self-hosted_clickhouse_1 ... 
+Creating sentry-self-hosted_redis_1      ... done
+Creating sentry-self-hosted_zookeeper_1  ... done
+Creating sentry-self-hosted_clickhouse_1 ... done
+Creating sentry-self-hosted_kafka_1      ... 
+Creating sentry-self-hosted_kafka_1      ... done
+Creating sentry-self-hosted_snuba-api_run ... 
+Creating sentry-self-hosted_snuba-api_run ... done
+2022-04-05 10:30:28,536 Attempting to connect to Kafka (attempt 0)...
+2022-04-05 10:30:28,586 Connected to Kafka on attempt 0
+2022-04-05 10:30:28,587 Creating Kafka topics...
+2022-04-05 10:30:29,593 Failed to create topic events
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,597 Failed to create topic event-replacements
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,598 Failed to create topic snuba-commit-log
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,599 Failed to create topic cdc
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,601 Failed to create topic snuba-metrics
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,603 Failed to create topic outcomes
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,606 Failed to create topic ingest-sessions
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,613 Failed to create topic snuba-sessions-commit-log
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,619 Failed to create topic snuba-metrics-commit-log
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,626 Failed to create topic scheduled-subscriptions-events
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,631 Failed to create topic scheduled-subscriptions-transactions
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,635 Failed to create topic scheduled-subscriptions-sessions
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,643 Failed to create topic scheduled-subscriptions-metrics
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,651 Failed to create topic events-subscription-results
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,657 Failed to create topic transactions-subscription-results
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,665 Failed to create topic sessions-subscription-results
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,671 Failed to create topic metrics-subscription-results
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,675 Failed to create topic snuba-queries
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,676 Failed to create topic processed-profiles
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+2022-04-05 10:30:29,682 Failed to create topic snuba-dead-letter-inserts
+Traceback (most recent call last):
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/src/snuba/snuba/utils/manage_topics.py", line 31, in create_topics
+    future.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/site-packages/confluent_kafka/admin/__init__.py", line 225, in _make_topics_result
+    result = f.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+cimpl.KafkaException: KafkaError{code=_TIMED_OUT,val=-185,str="Failed while waiting for response from broker: Local: Timed out"}
+Creating sentry-self-hosted_snuba-api_run ... 
+Creating sentry-self-hosted_snuba-api_run ... done
+2022-04-05 10:30:37,694 Running migration: 0001_migrations
+2022-04-05 10:30:37,702 Finished: 0001_migrations
+/usr/local/lib/python3.8/site-packages/clickhouse_driver/columns/datetimecolumn.py:199: PytzUsageWarning: The zone attribute is specific to pytz's interface; please migrate to a new time zone provider. For more details on how to do so, see https://pytz-deprecation-shim.readthedocs.io/en/latest/migration.html
+  local_timezone = get_localzone().zone
+2022-04-05 10:30:37,723 Running migration: 0001_events_initial
+2022-04-05 10:30:37,740 Finished: 0001_events_initial
+2022-04-05 10:30:37,749 Running migration: 0002_events_onpremise_compatibility
+2022-04-05 10:30:37,830 Finished: 0002_events_onpremise_compatibility
+2022-04-05 10:30:37,840 Running migration: 0003_errors
+2022-04-05 10:30:37,860 Finished: 0003_errors
+2022-04-05 10:30:37,870 Running migration: 0004_errors_onpremise_compatibility
+2022-04-05 10:30:37,886 Finished: 0004_errors_onpremise_compatibility
+2022-04-05 10:30:37,895 Running migration: 0005_events_tags_hash_map
+2022-04-05 10:30:37,912 Finished: 0005_events_tags_hash_map
+2022-04-05 10:30:37,924 Running migration: 0006_errors_tags_hash_map
+2022-04-05 10:30:37,942 Finished: 0006_errors_tags_hash_map
+2022-04-05 10:30:37,950 Running migration: 0007_groupedmessages
+2022-04-05 10:30:37,962 Finished: 0007_groupedmessages
+2022-04-05 10:30:37,970 Running migration: 0008_groupassignees
+2022-04-05 10:30:37,985 Finished: 0008_groupassignees
+2022-04-05 10:30:37,995 Running migration: 0009_errors_add_http_fields
+2022-04-05 10:30:38,019 Finished: 0009_errors_add_http_fields
+2022-04-05 10:30:38,028 Running migration: 0010_groupedmessages_onpremise_compatibility
+2022-04-05 10:30:38,037 Finished: 0010_groupedmessages_onpremise_compatibility
+2022-04-05 10:30:38,048 Running migration: 0011_rebuild_errors
+2022-04-05 10:30:38,086 Finished: 0011_rebuild_errors
+2022-04-05 10:30:38,094 Running migration: 0012_errors_make_level_nullable
+2022-04-05 10:30:38,107 Finished: 0012_errors_make_level_nullable
+2022-04-05 10:30:38,116 Running migration: 0013_errors_add_hierarchical_hashes
+2022-04-05 10:30:38,140 Finished: 0013_errors_add_hierarchical_hashes
+2022-04-05 10:30:38,149 Running migration: 0014_backfill_errors
+2022-04-05 10:30:38,159 Starting migration from 2022-04-04
+2022-04-05 10:30:38,187 Migrated 2022-04-04. (1 of 13 partitions done)
+2022-04-05 10:30:38,213 Migrated 2022-03-28. (2 of 13 partitions done)
+2022-04-05 10:30:38,240 Migrated 2022-03-21. (3 of 13 partitions done)
+2022-04-05 10:30:38,259 Migrated 2022-03-14. (4 of 13 partitions done)
+2022-04-05 10:30:38,280 Migrated 2022-03-07. (5 of 13 partitions done)
+2022-04-05 10:30:38,300 Migrated 2022-02-28. (6 of 13 partitions done)
+2022-04-05 10:30:38,320 Migrated 2022-02-21. (7 of 13 partitions done)
+2022-04-05 10:30:38,340 Migrated 2022-02-14. (8 of 13 partitions done)
+2022-04-05 10:30:38,360 Migrated 2022-02-07. (9 of 13 partitions done)
+2022-04-05 10:30:38,380 Migrated 2022-01-31. (10 of 13 partitions done)
+2022-04-05 10:30:38,403 Migrated 2022-01-24. (11 of 13 partitions done)
+2022-04-05 10:30:38,424 Migrated 2022-01-17. (12 of 13 partitions done)
+2022-04-05 10:30:38,446 Migrated 2022-01-10. (13 of 13 partitions done)
+2022-04-05 10:30:38,446 Done. Optimizing.
+2022-04-05 10:30:38,450 Finished: 0014_backfill_errors
+2022-04-05 10:30:38,458 Running migration: 0015_truncate_events
+2022-04-05 10:30:38,467 Finished: 0015_truncate_events
+2022-04-05 10:30:38,480 Running migration: 0001_transactions
+2022-04-05 10:30:38,495 Finished: 0001_transactions
+2022-04-05 10:30:38,505 Running migration: 0002_transactions_onpremise_fix_orderby_and_partitionby
+2022-04-05 10:30:38,514 Finished: 0002_transactions_onpremise_fix_orderby_and_partitionby
+2022-04-05 10:30:38,522 Running migration: 0003_transactions_onpremise_fix_columns
+2022-04-05 10:30:38,629 Finished: 0003_transactions_onpremise_fix_columns
+2022-04-05 10:30:38,638 Running migration: 0004_transactions_add_tags_hash_map
+2022-04-05 10:30:38,650 Finished: 0004_transactions_add_tags_hash_map
+2022-04-05 10:30:38,659 Running migration: 0005_transactions_add_measurements
+2022-04-05 10:30:38,671 Finished: 0005_transactions_add_measurements
+2022-04-05 10:30:38,683 Running migration: 0006_transactions_add_http_fields
+2022-04-05 10:30:38,702 Finished: 0006_transactions_add_http_fields
+2022-04-05 10:30:38,710 Running migration: 0007_transactions_add_discover_cols
+2022-04-05 10:30:38,744 Finished: 0007_transactions_add_discover_cols
+2022-04-05 10:30:38,752 Running migration: 0008_transactions_add_timestamp_index
+2022-04-05 10:30:38,769 Finished: 0008_transactions_add_timestamp_index
+2022-04-05 10:30:38,778 Running migration: 0009_transactions_fix_title_and_message
+2022-04-05 10:30:38,801 Finished: 0009_transactions_fix_title_and_message
+2022-04-05 10:30:38,810 Running migration: 0010_transactions_nullable_trace_id
+2022-04-05 10:30:38,828 Finished: 0010_transactions_nullable_trace_id
+2022-04-05 10:30:38,840 Running migration: 0011_transactions_add_span_op_breakdowns
+2022-04-05 10:30:38,857 Finished: 0011_transactions_add_span_op_breakdowns
+2022-04-05 10:30:38,866 Running migration: 0012_transactions_add_spans
+2022-04-05 10:30:38,924 Finished: 0012_transactions_add_spans
+2022-04-05 10:30:38,932 Running migration: 0013_transactions_reduce_spans_exclusive_time
+2022-04-05 10:30:38,960 Finished: 0013_transactions_reduce_spans_exclusive_time
+2022-04-05 10:30:38,969 Running migration: 0001_discover_merge_table
+2022-04-05 10:30:38,983 Finished: 0001_discover_merge_table
+2022-04-05 10:30:38,991 Running migration: 0002_discover_add_deleted_tags_hash_map
+2022-04-05 10:30:39,005 Finished: 0002_discover_add_deleted_tags_hash_map
+2022-04-05 10:30:39,014 Running migration: 0003_discover_fix_user_column
+2022-04-05 10:30:39,026 Finished: 0003_discover_fix_user_column
+2022-04-05 10:30:39,035 Running migration: 0004_discover_fix_title_and_message
+2022-04-05 10:30:39,050 Finished: 0004_discover_fix_title_and_message
+2022-04-05 10:30:39,060 Running migration: 0005_discover_fix_transaction_name
+2022-04-05 10:30:39,074 Finished: 0005_discover_fix_transaction_name
+2022-04-05 10:30:39,083 Running migration: 0006_discover_add_trace_id
+2022-04-05 10:30:39,093 Finished: 0006_discover_add_trace_id
+2022-04-05 10:30:39,101 Running migration: 0007_discover_add_span_id
+2022-04-05 10:30:39,111 Finished: 0007_discover_add_span_id
+2022-04-05 10:30:39,123 Running migration: 0001_outcomes
+2022-04-05 10:30:39,143 Finished: 0001_outcomes
+2022-04-05 10:30:39,151 Running migration: 0002_outcomes_remove_size_and_bytes
+2022-04-05 10:30:39,167 Finished: 0002_outcomes_remove_size_and_bytes
+2022-04-05 10:30:39,177 Running migration: 0003_outcomes_add_category_and_quantity
+2022-04-05 10:30:39,204 Finished: 0003_outcomes_add_category_and_quantity
+2022-04-05 10:30:39,214 Running migration: 0004_outcomes_matview_additions
+2022-04-05 10:30:39,226 Finished: 0004_outcomes_matview_additions
+2022-04-05 10:30:39,238 Running migration: 0001_metrics_buckets
+2022-04-05 10:30:39,264 Finished: 0001_metrics_buckets
+2022-04-05 10:30:39,277 Running migration: 0002_metrics_sets
+2022-04-05 10:30:39,329 Finished: 0002_metrics_sets
+2022-04-05 10:30:39,338 Running migration: 0003_counters_to_buckets
+2022-04-05 10:30:39,356 Finished: 0003_counters_to_buckets
+2022-04-05 10:30:39,371 Running migration: 0004_metrics_counters
+2022-04-05 10:30:39,405 Finished: 0004_metrics_counters
+2022-04-05 10:30:39,414 Running migration: 0005_metrics_distributions_buckets
+2022-04-05 10:30:39,427 Finished: 0005_metrics_distributions_buckets
+2022-04-05 10:30:39,435 Running migration: 0006_metrics_distributions
+2022-04-05 10:30:39,472 Finished: 0006_metrics_distributions
+2022-04-05 10:30:39,484 Running migration: 0007_metrics_sets_granularity_10
+2022-04-05 10:30:39,497 Finished: 0007_metrics_sets_granularity_10
+2022-04-05 10:30:39,504 Running migration: 0008_metrics_counters_granularity_10
+2022-04-05 10:30:39,515 Finished: 0008_metrics_counters_granularity_10
+2022-04-05 10:30:39,524 Running migration: 0009_metrics_distributions_granularity_10
+2022-04-05 10:30:39,538 Finished: 0009_metrics_distributions_granularity_10
+2022-04-05 10:30:39,546 Running migration: 0010_metrics_sets_granularity_1h
+2022-04-05 10:30:39,557 Finished: 0010_metrics_sets_granularity_1h
+2022-04-05 10:30:39,565 Running migration: 0011_metrics_counters_granularity_1h
+2022-04-05 10:30:39,575 Finished: 0011_metrics_counters_granularity_1h
+2022-04-05 10:30:39,585 Running migration: 0012_metrics_distributions_granularity_1h
+2022-04-05 10:30:39,596 Finished: 0012_metrics_distributions_granularity_1h
+2022-04-05 10:30:39,604 Running migration: 0013_metrics_sets_granularity_1d
+2022-04-05 10:30:39,620 Finished: 0013_metrics_sets_granularity_1d
+2022-04-05 10:30:39,627 Running migration: 0014_metrics_counters_granularity_1d
+2022-04-05 10:30:39,639 Finished: 0014_metrics_counters_granularity_1d
+2022-04-05 10:30:39,649 Running migration: 0015_metrics_distributions_granularity_1d
+2022-04-05 10:30:39,664 Finished: 0015_metrics_distributions_granularity_1d
+2022-04-05 10:30:39,674 Running migration: 0016_metrics_sets_consolidated_granularity
+2022-04-05 10:30:39,684 Finished: 0016_metrics_sets_consolidated_granularity
+2022-04-05 10:30:39,695 Running migration: 0017_metrics_counters_consolidated_granularity
+2022-04-05 10:30:39,707 Finished: 0017_metrics_counters_consolidated_granularity
+2022-04-05 10:30:39,717 Running migration: 0018_metrics_distributions_consolidated_granularity
+2022-04-05 10:30:39,730 Finished: 0018_metrics_distributions_consolidated_granularity
+2022-04-05 10:30:39,738 Running migration: 0019_aggregate_tables_add_ttl
+2022-04-05 10:30:39,762 Finished: 0019_aggregate_tables_add_ttl
+2022-04-05 10:30:39,773 Running migration: 0020_polymorphic_buckets_table
+2022-04-05 10:30:39,789 Finished: 0020_polymorphic_buckets_table
+2022-04-05 10:30:39,797 Running migration: 0021_polymorphic_bucket_materialized_views
+2022-04-05 10:30:39,818 Finished: 0021_polymorphic_bucket_materialized_views
+2022-04-05 10:30:39,832 Running migration: 0001_sessions
+2022-04-05 10:30:39,859 Finished: 0001_sessions
+2022-04-05 10:30:39,867 Running migration: 0002_sessions_aggregates
+2022-04-05 10:30:39,928 Finished: 0002_sessions_aggregates
+2022-04-05 10:30:39,939 Running migration: 0003_sessions_matview
+2022-04-05 10:30:39,959 Finished: 0003_sessions_matview
+Finished running migrations
+
+▶ Creating additional Kafka topics ...
+Creating sentry-self-hosted_kafka_run ... 
+Creating sentry-self-hosted_kafka_run ... done
+Created topic ingest-attachments.
+
+Creating sentry-self-hosted_kafka_run ... 
+Creating sentry-self-hosted_kafka_run ... done
+Created topic ingest-transactions.
+
+Creating sentry-self-hosted_kafka_run ... 
+Creating sentry-self-hosted_kafka_run ... done
+Created topic ingest-events.
+
+
+▶ Ensuring proper PostgreSQL version ...
+
+▶ Setting up / migrating database ...
+Creating sentry-self-hosted_smtp_1 ... 
+Creating sentry-self-hosted_memcached_1 ... 
+Creating sentry-self-hosted_postgres_1  ... 
+Creating sentry-self-hosted_symbolicator_1 ... 
+Creating sentry-self-hosted_snuba-consumer_1 ... 
+Creating sentry-self-hosted_snuba-sessions-consumer_1 ... 
+Creating sentry-self-hosted_snuba-subscription-consumer-transactions_1 ... 
+Creating sentry-self-hosted_snuba-subscription-consumer-events_1       ... 
+Creating sentry-self-hosted_snuba-api_1                                ... 
+Creating sentry-self-hosted_snuba-outcomes-consumer_1                  ... 
+Creating sentry-self-hosted_snuba-transactions-consumer_1              ... 
+Creating sentry-self-hosted_snuba-replacer_1                           ... 
+Creating sentry-self-hosted_memcached_1                                ... done
+Creating sentry-self-hosted_postgres_1                                 ... done
+Creating sentry-self-hosted_smtp_1                                     ... done
+Creating sentry-self-hosted_symbolicator_1                             ... done
+Creating sentry-self-hosted_snuba-consumer_1                           ... done
+Creating sentry-self-hosted_snuba-sessions-consumer_1                  ... done
+Creating sentry-self-hosted_snuba-replacer_1                           ... done
+Creating sentry-self-hosted_snuba-api_1                                ... done
+Creating sentry-self-hosted_snuba-outcomes-consumer_1                  ... done
+Creating sentry-self-hosted_snuba-subscription-consumer-transactions_1 ... done
+Creating sentry-self-hosted_snuba-transactions-consumer_1              ... done
+Creating sentry-self-hosted_snuba-subscription-consumer-events_1       ... done
+Creating sentry-self-hosted_web_run                                    ... 
+Creating sentry-self-hosted_web_run                                    ... done
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Installing additional dependencies...
+[33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m
+
+10:31:47 [WARNING] sentry.utils.geo: Error opening GeoIP database: /geoip/GeoLite2-City.mmdb
+10:31:47 [WARNING] sentry.utils.geo: Error opening GeoIP database in Rust: /geoip/GeoLite2-City.mmdb
+10:31:53 [INFO] sentry.plugins.github: apps-not-configured
+Running migrations for default
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0madmin, auth, contenttypes, nodestore, sentry, sessions, sites, social_auth
+[36;1mRunning migrations:[0m
+  Applying sentry.0001_squashed_0200_release_indices...[32;1m OK[0m
+  Applying contenttypes.0001_initial...[32;1m OK[0m
+  Applying admin.0001_initial...[32;1m OK[0m
+  Applying admin.0002_logentry_remove_auto_add...[32;1m OK[0m
+  Applying admin.0003_logentry_add_action_flag_choices...[32;1m OK[0m
+  Applying contenttypes.0002_remove_content_type_name...[32;1m OK[0m
+  Applying auth.0001_initial...[32;1m OK[0m
+  Applying auth.0002_alter_permission_name_max_length...[32;1m OK[0m
+  Applying auth.0003_alter_user_email_max_length...[32;1m OK[0m
+  Applying auth.0004_alter_user_username_opts...[32;1m OK[0m
+  Applying auth.0005_alter_user_last_login_null...[32;1m OK[0m
+  Applying auth.0006_require_contenttypes_0002...[32;1m OK[0m
+  Applying auth.0007_alter_validators_add_error_messages...[32;1m OK[0m
+  Applying auth.0008_alter_user_username_max_length...[32;1m OK[0m
+  Applying auth.0009_alter_user_last_name_max_length...[32;1m OK[0m
+  Applying auth.0010_alter_group_name_max_length...[32;1m OK[0m
+  Applying auth.0011_update_proxy_permissions...[32;1m OK[0m
+  Applying nodestore.0001_initial...[32;1m OK[0m
+  Applying nodestore.0002_nodestore_no_dictfield...[32;1m OK[0m
+  Applying sentry.0201_semver_package...[32;1m OK[0m
+  Applying sentry.0202_org_slug_upper_idx...[32;1m OK[0m
+  Applying sentry.0203_groupedmessage_status_index...[32;1m OK[0m
+  Applying sentry.0204_use_project_team_for_team_key_transactions...[32;1m OK[0m
+  Applying sentry.0205_semver_backfill...[32;1m OK[0m
+  Applying sentry.0206_organization_require_email_verification_flag...[32;1m OK[0m
+  Applying sentry.0207_release_adoption...[32;1m OK[0m
+  Applying sentry.0208_add_team_scope...[32;1m OK[0m
+  Applying sentry.0209_avatar_remove_file_fk...[32;1m OK[0m
+  Applying sentry.0210_backfill_project_transaction_thresholds...[32;1m OK[0m
+  Applying sentry.0211_add_artifact_count...[32;1m OK[0m
+  Applying sentry.0212_appconnectbuilds...[32;1m OK[0m
+  Applying sentry.0213_rule_project_status_owner_index...[32;1m OK[0m
+  Applying sentry.0214_activity_project_type_datetime_idx...[32;1m OK[0m
+  Applying sentry.0215_fix_state...[32;1m OK[0m
+  Applying sentry.0216_cdc_setup_replication_index...[32;1m OK[0m
+  Applying sentry.0217_debugfile_remove_project_fk...[32;1m OK[0m
+  Applying sentry.0218_releasefile_remove_fks...[32;1m OK[0m
+  Applying sentry.0219_exporteddatablob_remove_blob_fk...[32;1m OK[0m
+  Applying sentry.0220_add_current_release_version_group_resolution...[32;1m OK[0m
+  Applying sentry.0221_add_appconnect_upload_dates...[32;1m OK[0m
+  Applying sentry.0222_add_datetime_index_to_auditlogentry...[32;1m OK[0m
+  Applying sentry.0223_semver_backfill_2...[32;1m OK[0m
+  Applying sentry.0224_has_sessions_flag...[32;1m OK[0m
+  Applying sentry.0225_latest_appconnect_builds_check...[32;1m OK[0m
+  Applying sentry.0226_add_visits...[32;1m OK[0m
+  Applying sentry.0227_backfill_visits...[32;1m OK[0m
+  Applying sentry.0228_update_auditlog_index_with_entry...[32;1m OK[0m
+  Applying sentry.0229_drop_jiratenant...[32;1m OK[0m
+  Applying sentry.0230_sentry_app_config_jsonfield...[32;1m OK[0m
+  Applying sentry.0231_alert_rule_comparison_delta...[32;1m OK[0m
+  Applying sentry.0232_backfill_missed_semver_releases...[32;1m OK[0m
+  Applying sentry.0233_recreate_subscriptions_in_snuba...[32;1m OK[0m
+  Applying sentry.0234_grouphistory...[32;1m OK[0m
+  Applying sentry.0235_add_metricskeyindexer_table...[32;1m OK[0m
+  Applying sentry.0236_remove_legacy_key_transactions...[32;1m OK[0m
+  Applying sentry.0237_recreate_subscriptions_in_snuba...[32;1m OK[0m
+  Applying sentry.0238_remove_scheduleddeletion_aborted...[32;1m OK[0m
+  Applying sentry.0239_drop_scheduleddeletion_aborted...[32;1m OK[0m
+  Applying sentry.0240_grouphistory_index...[32;1m OK[0m
+  Applying sentry.0241_grouphistory_null_actor...[32;1m OK[0m
+  Applying sentry.0242_delete_removed_plugin_data...[32;1m OK[0m
+  Applying sentry.0243_delete_visualstudio_repo_data...[32;1m OK[0m
+  Applying sentry.0244_organization_and_integration_foreign_keys...[32;1m OK[0m
+  Applying sentry.0245_delete_itunes_credentials...[32;1m OK[0m
+  Applying sentry.0246_incident_snapshots_remove_fks...[32;1m OK[0m
+  Applying sentry.0247_add_color_column...[32;1m OK[0m
+  Applying sentry.0248_add_popularity_column...[32;1m OK[0m
+
+  Applying sentry.0249_add_avatar_type_back...[32;1m OK[0m
+
+  Applying sentry.0250_backfill_popularity...[32;1m OK[0m
+
+  Applying sentry.0251_sentryappavatar_sentryapp_not_unique...[32;1m OK[0m
+  Applying sentry.0252_code_mapping_cascade_delete...[32;1m OK[0m
+  Applying sentry.0253_add_widget_type...[32;1m OK[0m
+  Applying sentry.0254_org_integration_grace_period_end...[32;1m OK[0m
+  Applying sentry.0255_delete_code_mappings_with_no_integration...[32;1m OK[0m
+  Applying sentry.0256_create_docintegration_table...[32;1m OK[0m
+  Applying sentry.0257_add_target_id_and_type_to_integrationfeature...[32;1m OK[0m
+  Applying sentry.0258_create_docintegrationavatar_table...[32;1m OK[0m
+  Applying sentry.0259_delete_codeowners_and_code_mappings_with_no_integration...[32;1m OK[0m
+  Applying sentry.0260_backfill_integrationfeature...[32;1m OK[0m
+  Applying sentry.0261_prepare_remove_sentry_app_column...[32;1m OK[0m
+  Applying sentry.0262_drop_sentry_app_from_integrationfeature...[32;1m OK[0m
+  Applying sentry.0263_remove_not_null_integrationfeature...[32;1m OK[0m
+  Applying sentry.0264_use_booleanfield_docintegration...[32;1m OK[0m
+  Applying sentry.0265_add_userrole...[32;1m OK[0m
+  Applying sentry.0266_add_dashboard_widget_detail_field...[32;1m OK[0m
+  Applying sentry.0267_sentry_release_version_btree...[32;1m OK[0m
+  Applying sentry.0268_rename_issue_widget_query_fields...[32;1m OK[0m
+  Applying sentry.0269_alertrule_remove_unique_name...[32;1m OK[0m
+  Applying sentry.0270_group_history_project_date_added_index...[32;1m OK[0m
+  Applying sentry.0271_add_codeowners_auto_sync_setting...[32;1m OK[0m
+  Applying sentry.0272_seq_scan_indexes...[32;1m OK[0m
+  Applying sentry.0273_fix_grouplink_seqscans...[32;1m OK[0m
+  Applying sentry.0274_add_dashboardwidgetquery_columns_aggregates...[32;1m OK[0m
+  Applying sentry.0275_rule_fire_history...[32;1m OK[0m
+  Applying sentry.0276_rulefirehistory_date_added_index...[32;1m OK[0m
+  Applying sentry.0277_backfill_dashboard_widget_query_columns_aggregates...[32;1m OK[0m
+  Applying sentry.0278_backfill_codeowners_auto_sync_setting...[32;1m OK[0m
+  Applying sentry.0279_add_limit_dashboard_widget...[32;1m OK[0m
+  Applying sentry.0280_extend_commit_author_email_length...[32;1m OK[0m
+  Applying sessions.0001_initial...[32;1m OK[0m
+  Applying sites.0001_initial...[32;1m OK[0m
+  Applying sites.0002_alter_domain_unique...[32;1m OK[0m
+  Applying social_auth.0001_initial...[32;1m OK[0m
+10:33:16 [WARNING] sentry: Cannot initiate onboarding for organization (1) due to missing owners
+Created internal Sentry project (slug=internal, id=1)
+
+Would you like to create a user account now? [Y/n]: Email: Email: Email: 
+Email: 
+Email: 
+Email: 
+Email: 
+Email: 
+Email: 
+Email: 
+Email: 143
+An error occurred, caught SIGERR on line 12
+Cleaning up...
