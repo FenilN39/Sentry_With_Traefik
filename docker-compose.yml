@@ -353,7 +353,7 @@ services:
       - "traefik.http.middlewares.sentry-lmthosting-https-redirect.redirectscheme.scheme=https"
       - "traefik.http.routers.sentry-lmthosting.middlewares=sentry-lmthosting-https-redirect"
       - "traefik.http.routers.sentry-lmthosting-secure.entrypoints=https"
-      - "traefik.http.routers.sentry-lmthosting-secure.rule=Host(`sentry.somethingforsale.tk`)"
+      - "traefik.http.routers.sentry-lmthosting-secure.rule=Host(`ADD URL HERE`)"
       - "traefik.http.routers.sentry-lmthosting-secure.tls=true"
       - "traefik.http.routers.sentry-lmthosting-secure.tls.certresolver=http"
       - "traefik.http.routers.sentry-lmthosting-secure.service=sentry-lmthosting"
